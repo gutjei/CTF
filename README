@@ -1,0 +1,20 @@
+apt install gdb -y
+echo set disassembly-flavor intel >> ~/.gdbinit 
+read pwna -a
+
+Sheelcode
+
+msfvenom
+./msfvenom --format c --platform linux -p linix/x86/exec -e \
+  x86/call4_dword_xor --bad-chars '\x0a\x0b\x0c\x0d' -a x86 \
+  AppendExit=true CMD="bash"
+
+MSFvenom  (MSFPC)
+
+Install gef
+wget -O ~/.gdbinit-gef.py -q http://gef.blah.cat/py
+echo source ~/.gdbinit-gef.py >> ~/.gdbinit
+
+
+Detect it easy
+https://github.com/horsicq/DIE-engine/releases/download/3.01/die_win64_portable_3.01.zip
