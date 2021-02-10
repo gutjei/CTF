@@ -1,4 +1,4 @@
-##GDB
+# GDB
 apt install gdb -y
 echo set disassembly-flavor intel >> ~/.gdbinit 
 read pwna -a
